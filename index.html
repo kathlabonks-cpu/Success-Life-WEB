@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Life Specialist Clinic | 24/7 Emergency & Critical Care in Port Harcourt</title>
+    <meta name="description"
+        content="Success Life Specialist Clinic in Port Harcourt provides high-quality specialist healthcare, 24-hour emergency care, and patient-centred services. Call us today.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#65a30d', // Lemon Green
+                        'primary-dark': '#4d7c0f',
+                        secondary: '#FCE4EC', // Baby Pink bg
+                        'secondary-accent': '#ec4899', // Pink accent
+                        dark: '#1f2937',
+                        'light-gray': '#f9fafb'
+                    },
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #1f2937;
+            overflow-x: hidden;
+            /* Prevents horizontal scroll from animations */
+        }
+
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(#FCE4EC 20%, transparent 20%), radial-gradient(#F0FDF4 20%, transparent 20%);
+            background-position: 0 0, 20px 20px;
+            background-size: 40px 40px;
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+        }
+
+        .hover-grow {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-grow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(101, 163, 13, 0.15), 0 10px 15px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Pulse animation for 24/7 badge */
+        @keyframes pulse-soft {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .pulse-soft {
+            animation: pulse-soft 2s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-white antialiased pb-16 md:pb-0">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Official Logo Integration -->
+                <a href="#hero" class="flex items-center space-x-3">
+                    <img src="logo.jpg" alt="Success Life Specialist Clinic Logo"
+                        class="h-12 w-12 md:h-14 md:w-14 rounded-full object-contain bg-white shadow-sm border border-gray-200 p-1"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><circle cx=\'50\' cy=\'50\' r=\'48\' fill=\'%2365a30d\'/><path d=\'M50 25 v50 M25 50 h50\' stroke=\'white\' stroke-width=\'14\' stroke-linecap=\'round\'/></svg>';">
+                    <div class="flex flex-col leading-tight">
+                        <span class="font-extrabold text-lg text-gray-800">Success Life</span>
+                        <span class="text-xs text-primary font-semibold tracking-wide">SPECIALIST CLINIC</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8 font-semibold text-gray-600">
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#services" class="hover:text-primary transition">Services</a>
+                    <a href="#hmo" class="hover:text-primary transition">HMOs</a>
+                    <a href="#reviews" class="hover:text-primary transition">Reviews</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+
+                <a href="tel:+2349131730205"
+                    class="hidden md:flex items-center space-x-2 bg-primary text-white px-5 py-2.5 rounded-full hover:bg-primary-dark transition font-bold">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Now</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative py-12 md:py-24 overflow-hidden">
+        <!-- Reception Area Background Image with Subtle White/Lemon-Green Gradient Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="reception.jpg" alt="Success Life Specialist Clinic Reception Area"
+                class="w-full h-full object-cover object-center">
+            <!-- Subtle white / lemon-green gradient overlay for perfect readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-lime-50/80 md:via-white/90"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 md:hidden"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left" data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                        class="inline-flex items-center bg-secondary text-secondary-accent px-4 py-1.5 rounded-full text-sm font-bold mb-4 shadow-sm">
+                        <i class="fas fa-star text-yellow-400 mr-2"></i>
+                        4.8★ Google Rating
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        <span class="text-primary">24-Hour Emergency</span> & Critical Care You Can Trust
+                    </h1>
+                    <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto md:mx-0 font-medium">
+                        High-quality specialist healthcare through experienced consultants, modern diagnostics, and
+                        compassionate, patient-centred care in Port Harcourt.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="tel:+2349131730205"
+                            class="flex items-center justify-center space-x-2 bg-primary text-white px-8 py-4 rounded-full hover:bg-primary-dark transition font-bold text-lg shadow-lg shadow-lime-600/30 transform hover:scale-105 duration-300">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Call Now</span>
+                        </a>
+                        <a href="https://wa.me/2349131730205" target="_blank"
+                            class="flex items-center justify-center space-x-2 bg-green-500 text-white px-8 py-4 rounded-full hover:bg-green-600 transition font-bold text-lg shadow-lg shadow-green-500/30 transform hover:scale-105 duration-300">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>WhatsApp Us</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden md:block" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-delay="200">
+                    <!-- Featured Reception Image Display Card -->
+                    <div
+                        class="aspect-square rounded-[2.5rem] bg-white p-2.5 shadow-2xl relative overflow-hidden border-4 border-white/80 group">
+                        <img src="reception.jpg" alt="Success Life Specialist Clinic Reception Area"
+                            class="w-full h-full object-cover rounded-[2rem] transform transition-transform duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 rounded-[2rem] bg-gradient-to-t from-gray-900/70 via-transparent to-transparent opacity-85">
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6 text-white">
+                            <span
+                                class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm mb-2 inline-block">Reception
+                                & Triage Desk</span>
+                            <h3 class="text-xl font-bold text-white leading-snug">Warm & Efficient Reception</h3>
+                            <p class="text-xs text-lime-100 opacity-90 mt-1">NHIS Accredited Provider • 24/7 Patient
+                                Intake</p>
+                        </div>
+                    </div>
+                    <!-- Floating Card -->
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center space-x-3 border border-gray-100 pulse-soft">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-500">
+                            <i class="fas fa-ambulance text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">24/7 Emergency</p>
+                            <p class="text-xs text-gray-500">Always Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative" data-aos="fade-up" data-aos-duration="1000">
+                    <div
+                        class="aspect-[4/3] rounded-3xl bg-secondary shadow-lg flex items-center justify-center overflow-hidden relative group">
+                        <!-- Nurse Attending to Patient Photo -->
+                        <img src="nurse-patient.jpg" alt="Nurse providing compassionate patient-centred care"
+                            class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-20 text-white p-2">
+                            <span
+                                class="inline-flex items-center gap-1.5 bg-primary/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm mb-1">
+                                <i class="fas fa-heart text-white"></i> Compassionate Care
+                            </span>
+                            <p class="text-xs text-gray-100 font-medium">Attentive nursing care & patient monitoring</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bottom-6 right-6 bg-primary text-white p-6 rounded-2xl shadow-xl text-center transform transition-transform hover:scale-105">
+                        <p class="text-3xl font-extrabold">9+</p>
+                        <p class="text-sm font-semibold uppercase tracking-wide">Years of Service</p>
+                        <p class="text-xs opacity-80 mt-1">Est. 2015</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">About Us</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-6">Compassionate Care, Modern
+                        Medicine</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Success Life Specialist Clinic provides high-quality specialist healthcare services through a
+                        team of experienced consultants, modern diagnostic facilities, advanced treatment options, and
+                        compassionate patient-centred care.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        We are committed to delivering safe, efficient, and accessible healthcare for individuals,
+                        families, and corporate organizations. Located in Port Harcourt, Rivers State, we have been a
+                        trusted healthcare provider for nearly a decade.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3 bg-light-gray p-4 rounded-xl">
+                            <div
+                                class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Expert Consultants</h4>
+                                <p class="text-sm text-gray-500">Highly experienced specialists</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-light-gray p-4 rounded-xl">
+                            <div
+                                class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Modern Diagnostics</h4>
+                                <p class="text-sm text-gray-500">Advanced lab & imaging</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-wider text-sm">Our Services</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Comprehensive Medical Services
+                </h2>
+                <p class="text-gray-600">From routine check-ups to critical care, we offer a full spectrum of medical
+                    services to meet your needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Emergency Care (Featured) -->
+                <div class="lg:col-span-2 lg:row-span-2 bg-white rounded-3xl p-8 border-t-4 border-primary relative overflow-hidden hover-grow card-shadow flex flex-col"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div
+                        class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-4 py-2 rounded-bl-2xl">
+                        AVAILABLE 24/7</div>
+                    <div
+                        class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-500 text-2xl mb-6 mt-4">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Emergency & Critical Care</h3>
+                    <p class="text-gray-600 mb-6">Our dedicated team is available around the clock to handle medical
+                        emergencies with rapid response and advanced critical care support.</p>
+                    <ul class="grid grid-cols-2 gap-x-4 gap-y-3 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-3"></i>24-hour emergency
+                            care</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-3"></i>Trauma & accident
+                            management</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-3"></i>Emergency
+                            stabilization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-3"></i>Ambulance services
+                        </li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-3"></i>Intensive Care Unit
+                            (ICU)</li>
+                    </ul>
+                </div>
+
+                <!-- Outpatient Services -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Outpatient Services</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>General &
+                            Specialist consultation</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Follow-up clinics
+                        </li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Preventive health
+                            screening</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Immunization
+                            services</li>
+                    </ul>
+                </div>
+
+                <!-- Specialist Medical Services -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Specialist Services</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Internal Medicine &
+                            Cardiology</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Neurology &
+                            Pulmonology</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Gastroenterology
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Surgical Services -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Surgical Services</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>General &
+                            Orthopaedic surgery</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Urology & ENT
+                            surgery</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Laparoscopic
+                            surgery</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Pre/Post-operative
+                            care</li>
+                    </ul>
+                </div>
+
+                <!-- Women's Health -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Women's Health</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Obstetrics &
+                            Gynaecology</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Antenatal &
+                            Postnatal care</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Family planning
+                        </li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Fertility services
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paediatric Services -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Paediatric Services</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Child health
+                            consultation</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Newborn care &
+                            immunization</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Growth &
+                            developmental checks</li>
+                    </ul>
+                </div>
+
+                <!-- Diagnostic & Laboratory -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-vials"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Diagnostics & Lab</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Medical lab
+                            investigations</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Ultrasound, X-ray &
+                            CT scan</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>ECG & cardiac
+                            diagnostics</li>
+                    </ul>
+                </div>
+
+                <!-- Rehabilitation & Physiotherapy -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Rehabilitation</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Physiotherapy</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Occupational
+                            therapy</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Pain management
+                        </li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Post-surgical rehab
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pharmacy & Corporate -->
+                <div class="bg-white rounded-3xl p-6 border-t-4 border-secondary-accent hover-grow card-shadow"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent text-xl mb-4">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-gray-900 mb-3">Pharmacy & Corporate</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>24-hour pharmacy
+                        </li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Executive medical
+                            check-ups</li>
+                        <li class="flex items-start"><i
+                                class="fas fa-circle text-[6px] text-secondary-accent mt-2 mr-2"></i>Pre-employment
+                            medical exams</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HMO / Insurance Section -->
+    <section id="hmo" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-wider text-sm">Insurance & HMO</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">We Accept These HMOs</h2>
+                <p class="text-gray-600">Access quality healthcare with ease. We partner with leading Health Maintenance
+                    Organizations.</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400">Reliance HMO</span>
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">Leadway Health</span>
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">NEM Health</span>
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">Synergy HMO</span>
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">AXA Mansard</span>
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500">Police HMO</span>
+                <span
+                    class="bg-light-gray text-gray-700 font-bold px-6 py-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+                    data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600">United Healthcare HMO</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Reviews Split Section -->
+    <section class="py-16 md:py-24 bg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+
+            <!-- Operating Hours -->
+            <div id="hours" data-aos="fade-right" data-aos-duration="800">
+                <span class="text-primary font-bold uppercase tracking-wider text-sm">Clinic Hours</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-8">When We're Open</h2>
+                <div class="space-y-4">
+                    <div
+                        class="bg-white p-6 rounded-2xl flex items-center justify-between card-shadow border-l-4 border-primary transform hover:scale-[1.02] transition">
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">General Outpatient Clinic</h4>
+                            <p class="text-gray-500">Monday – Saturday</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-gray-800">8:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-secondary p-6 rounded-2xl flex items-center justify-between card-shadow border-l-4 border-secondary-accent transform hover:scale-[1.02] transition">
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">Emergency Department</h4>
+                            <p class="text-gray-600">Monday – Sunday</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-extrabold text-secondary-accent text-lg">Open 24 Hours</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl flex items-center justify-between card-shadow border-l-4 border-primary transform hover:scale-[1.02] transition">
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">Specialist Consultations</h4>
+                            <p class="text-gray-500">By Appointment Only</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="tel:+2349131730205" class="font-bold text-primary hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div id="reviews" data-aos="fade-left" data-aos-duration="800">
+                <div class="flex items-center mb-8 space-x-4">
+                    <div class="text-center bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
+                        <p class="text-4xl font-extrabold text-gray-900">4.8</p>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Google Rating</p>
+                    </div>
+                    <div>
+                        <span class="text-primary font-bold uppercase tracking-wider text-sm">Testimonials</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">What Our Patients Say</h2>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-2xl card-shadow relative transform hover:translate-x-2 transition">
+                        <i class="fab fa-google text-blue-500 absolute top-6 right-6 text-2xl"></i>
+                        <div class="flex items-center mb-2">
+                            <div
+                                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
+                                OJ</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Okocha Joy</h4>
+                                <div class="text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm italic">"A nice hospital. It has served my family for 6 years
+                            and counting. Dr. Henry and his team make you feel at home."</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl card-shadow relative transform hover:translate-x-2 transition">
+                        <i class="fab fa-google text-blue-500 absolute top-6 right-6 text-2xl"></i>
+                        <div class="flex items-center mb-2">
+                            <div
+                                class="w-10 h-10 bg-secondary-accent text-white rounded-full flex items-center justify-center font-bold mr-3">
+                                OE</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Onyinyechi Ekwelem</h4>
+                                <div class="text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm italic">"This clinic is the best I've been to."</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl card-shadow relative transform hover:translate-x-2 transition">
+                        <i class="fab fa-google text-blue-500 absolute top-6 right-6 text-2xl"></i>
+                        <div class="flex items-center mb-2">
+                            <div
+                                class="w-10 h-10 bg-gray-700 text-white rounded-full flex items-center justify-center font-bold mr-3">
+                                DE</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">DEE EDO</h4>
+                                <div class="text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm italic">"Best Medical Center in Agip."</p>
+                    </div>
+                </div>
+
+                <a href="https://maps.google.com" target="_blank"
+                    class="mt-6 inline-flex items-center text-primary font-bold hover:underline">
+                    Read more reviews on Google <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-stretch">
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">Contact Us</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-8">Get In Touch</h2>
+                    <div class="space-y-6">
+                        <div
+                            class="flex items-start space-x-4 bg-white p-5 rounded-2xl card-shadow transform hover:scale-[1.02] transition">
+                            <div
+                                class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Visit Us</h4>
+                                <p class="text-gray-600">3rd Avenue, D-Close, Federal Housing, Agip Estate, Port
+                                    Harcourt, Rivers State</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start space-x-4 bg-white p-5 rounded-2xl card-shadow transform hover:scale-[1.02] transition">
+                            <div
+                                class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent flex-shrink-0">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Call / WhatsApp</h4>
+                                <p class="text-gray-600">Main: <a href="tel:+2349131730205"
+                                        class="text-primary hover:underline font-semibold">+234 913 173 0205</a></p>
+                                <p class="text-gray-600">Secondary: <a href="tel:+2347013521512"
+                                        class="text-primary hover:underline font-semibold">+234 701 352 1512</a></p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-start space-x-4 bg-white p-5 rounded-2xl card-shadow transform hover:scale-[1.02] transition">
+                            <div
+                                class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-secondary-accent flex-shrink-0">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email Us</h4>
+                                <a href="mailto:successlifespecalistclinic@gmail.com"
+                                    class="text-gray-600 hover:text-primary break-all">successlifespecalistclinic@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg min-h-[400px] border-4 border-white"
+                    data-aos="fade-left" data-aos-duration="800">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31800.05558441934!2d6.981650725787353!3d4.815396400000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ceb0f5608b8f%3A0x4c8e7c4f3e0a0f8e!2sAgip%20Estate%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1678888888888"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-24 md:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-white p-1 rounded-full">
+                            <img src="logo.jpg" alt="Success Life Specialist Clinic Logo"
+                                class="h-12 w-12 rounded-full object-contain bg-white"
+                                onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><circle cx=\'50\' cy=\'50\' r=\'48\' fill=\'%2365a30d\'/><path d=\'M50 25 v50 M25 50 h50\' stroke=\'white\' stroke-width=\'14\' stroke-linecap=\'round\'/></svg>';">
+                        </div>
+                        <div class="flex flex-col leading-tight">
+                            <span class="font-extrabold text-lg text-white">Success Life</span>
+                            <span class="text-xs text-primary font-semibold tracking-wide">SPECIALIST CLINIC</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Providing high-quality specialist healthcare with compassion and
+                        modern technology since 2015.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <h4 class="font-bold text-lg mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-primary transition">Our Services</a></li>
+                        <li><a href="#hmo" class="hover:text-primary transition">HMO Partners</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h4 class="font-bold text-lg mb-4 text-white">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mr-3 mt-1 text-primary"></i> 3rd
+                            Avenue, D-Close, Federal Housing, Agip Estate, Port Harcourt, Rivers State</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-primary"></i> +234 913 173
+                            0205</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-primary"></i>
+                            successlifespecalistclinic@gmail.com</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://wa.me/2349131730205"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Success Life Specialist Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Bottom Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 flex shadow-2xl">
+        <a href="tel:+2349131730205"
+            class="flex-1 py-4 flex items-center justify-center text-primary font-bold text-lg border-r border-gray-100">
+            <i class="fas fa-phone-alt mr-2"></i> Call
+        </a>
+        <a href="https://wa.me/2349131730205"
+            class="flex-1 py-4 flex items-center justify-center bg-green-500 text-white font-bold text-lg">
+            <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS Animations
+        AOS.init({
+            once: true, // Animations only happen once
+            offset: 50, // Trigger animation slightly before element is in view
+            duration: 800 // Default duration
+        });
+    </script>
+
+</body>
+
+</html>
